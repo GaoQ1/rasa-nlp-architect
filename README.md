@@ -26,11 +26,11 @@ python interactive.py --model_path models/seq2seq/model.h5 --dataset_path rasa_d
 
 ## Provide a server
 ```
-python server.py -m models/mtl/model.h5 -i models/mtl/model_info.dat -w logs/mtl.log
+python server.py -m models/mtl/model.h5 -i models/mtl/model_info.dat
 ```
 or
 ```
-python server.py -m models/seq2seq/model.h5 -i models/seq2seq/model_info.dat -w logs/seq2seq.log
+python server.py -m models/seq2seq/model.h5 -i models/seq2seq/model_info.dat
 ```
 
 ## TODO
