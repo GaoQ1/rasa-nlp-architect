@@ -7,21 +7,21 @@
 
 ## Train mtl model
 ```
-python train_mtl_model.py --dataset_path rasa_data/rasa_nlu_data/ -b 100 -e 1
+python train_mtl_model.py --dataset_path rasa_data/rasa_nlu_data/ -b 100 -e 10
 ```
 
 ## Train seq2seq model
 ```
-python train_seq2seq_model.py --dataset_path rasa_data/rasa_nlu_data/ -b 100 -e 1
+python train_seq2seq_model.py --dataset_path rasa_data/rasa_nlu_data/ -b 100 -e 10
 ```
 
 ## Interactive
 ```
-python interactive.py --model_path models/mtl/my_model.h5 --dataset_path rasa_data/rasa_nlu_data/
+python interactive.py --model_path models/mtl/model.h5 --dataset_path rasa_data/rasa_nlu_data/
 ```
 or
 ```
-python interactive.py --model_path models/seq2seq/my_model.h5 --dataset_path rasa_data/rasa_nlu_data/
+python interactive.py --model_path models/seq2seq/model.h5 --dataset_path rasa_data/rasa_nlu_data/
 ```
 
 ## Provide a server
