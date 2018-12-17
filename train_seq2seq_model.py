@@ -61,9 +61,9 @@ if __name__ == '__main__':
                         help='Decoder dropout value')
     parser.add_argument('--embedding_model', type=validate_existing_filepath,
                         help='Path to word embedding model file')
-    parser.add_argument('--model_path', type=str, default='./model.h5',
+    parser.add_argument('--model_path', type=str, default='models/seq2seq/model.h5',
                         help='Model file path')
-    parser.add_argument('--model_info_path', type=str, default='./model_info.dat',
+    parser.add_argument('--model_info_path', type=str, default='models/seq2seq/model_info.dat',
                         help='Path for saving model topology')
     args = parser.parse_args()
     validate_input_args()

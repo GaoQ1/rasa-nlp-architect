@@ -58,9 +58,9 @@ if __name__ == '__main__':
                         help='Path to word embedding model file')
     parser.add_argument('--use_cudnn', default=False, action='store_true',
                         help='use CUDNN based LSTM cells')
-    parser.add_argument('--model_path', type=str, default='./model.h5',
+    parser.add_argument('--model_path', type=str, default='models/mtl/model.h5',
                         help='Model file path')
-    parser.add_argument('--model_info_path', type=str, default='./model_info.dat',
+    parser.add_argument('--model_info_path', type=str, default='models/mtl/model_info.dat',
                         help='Path for saving model topology')
     args = parser.parse_args()
     validate_input_args()
